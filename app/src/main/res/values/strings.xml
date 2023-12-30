@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KiraTakip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yeni_site_ekle">Yeni Site Ekle</string>
+    <string name="site_ismini_giriniz">Site İsmini Giriniz</string>
+    <string name="blok_sayisini_giriniz">Blok Sayısını giriniz</string>
+    <string name="devam_et">Devam Et</string>
+</resources>

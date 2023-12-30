@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DaireDetayFragment">
+
+    <TextView
+        android:id="@+id/daireDetayBaslikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Ad Soyad: " />
+
+        <EditText
+            android:id="@+id/adSoyadEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="T.C. Kimlik No: " />
+
+        <EditText
+            android:id="@+id/tcEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:maxLength="11"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Telefon No: " />
+
+        <EditText
+            android:id="@+id/telNoEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:maxLength="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Kira Bedeli: " />
+
+        <EditText
+            android:id="@+id/kiraBedeliEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Depozito: " />
+
+        <EditText
+            android:id="@+id/depozitoEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Sözleşme Başlangıç T. : " />
+
+    <TextView
+        android:id="@+id/sozlesmeBaslangicTarihiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/gray"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:text="Henüz seçilmedi"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Sözleşme Bitiş T. : " />
+
+    <TextView
+        android:id="@+id/sozlesmeBitisTarihiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/gray"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Henüz seçilmedi" />
+
+    <Button
+        android:id="@+id/kaydetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/softgreen"
+        android:textColor="@color/blue"
+        android:text="Kaydet"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

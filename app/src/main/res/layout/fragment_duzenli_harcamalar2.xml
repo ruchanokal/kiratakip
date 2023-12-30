@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuzenliHarcamalarFragment2">
+
+    <TextView
+        android:id="@+id/aylikHarcamalarBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        android:text="Düzenli Harcamalar"
+        android:textSize="23sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/ayBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        tools:text="Ocak 2023"
+        android:textSize="18sp"
+        android:layout_below="@id/aylikHarcamalarBaslik"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/duzenliHarcamalarRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:id="@+id/ekleButton"
+        android:backgroundTint="@color/softgreen"
+        android:textColor="@color/blue"
+        android:layout_below="@id/duzenliHarcamalarRW"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="25sp"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/toplamGiderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        android:layout_above="@+id/kaydetButton"
+        android:layout_centerHorizontal="true"
+        tools:text="Toplam Gider :"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaydetButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/softgreen"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="15dp"
+        android:text="Kaydet"/>
+
+</RelativeLayout>

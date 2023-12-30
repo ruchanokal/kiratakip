@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261598080946",
+    "project_id": "kiratakip-14c26",
+    "storage_bucket": "kiratakip-14c26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261598080946:android:91cb3f924082fb9b68beab",
+        "android_client_info": {
+          "package_name": "com.kira.takip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT5GCPT826yx0Yi9HciC18CEobA5H0Nb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

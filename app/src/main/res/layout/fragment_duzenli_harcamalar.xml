@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DuzenliHarcamalarFragment">
+
+
+    <TextView
+        android:id="@+id/duzenliHarcamalarBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        android:text="Düzenli Ödemeler"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/ayBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        tools:text="Ocak 2023"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Kira: " />
+
+        <EditText
+            android:id="@+id/kiraEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Kredi: " />
+
+        <EditText
+            android:id="@+id/krediEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Vergi: " />
+
+        <EditText
+            android:id="@+id/vergiEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Taksit: " />
+
+        <EditText
+            android:id="@+id/taksitEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Aidat: " />
+
+        <EditText
+            android:id="@+id/aidatEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emailpasswordborder"
+            android:ems="14"
+            android:fontFamily="@font/manrope_medium"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <Button
+        android:id="@+id/kaydetButton"
+        android:text="Kaydet"
+        android:backgroundTint="@color/softgreen"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/manrope_medium"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/toplamGiderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        tools:text="Toplam Gider :"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp" />
+
+
+
+</LinearLayout>

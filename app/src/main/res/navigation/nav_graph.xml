@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.kira.takip.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_siteEkleFragment"
+            app:destination="@id/siteEkleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_kiraGelirleriFragment"
+            app:destination="@id/kiraGelirleriFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aySecinizFragment"
+            app:destination="@id/aySecinizFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aylarFragment2"
+            app:destination="@id/aylarFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/siteEkleFragment"
+        android:name="com.kira.takip.SiteEkleFragment"
+        android:label="fragment_site_ekle"
+        tools:layout="@layout/fragment_site_ekle" >
+        <action
+            android:id="@+id/action_siteEkleFragment_to_blokFragment"
+            app:destination="@id/blokFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blokFragment"
+        android:name="com.kira.takip.BlokFragment"
+        android:label="fragment_blok"
+        tools:layout="@layout/fragment_blok" >
+        <action
+            android:id="@+id/action_blokFragment_to_daireFragment"
+            app:destination="@id/daireFragment" />
+        <argument
+            android:name="blokList"
+            app:argType="string[]" />
+        <argument
+            android:name="siteAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/daireFragment"
+        android:name="com.kira.takip.DaireFragment"
+        android:label="fragment_daire"
+        tools:layout="@layout/fragment_daire" >
+        <argument
+            android:name="daire"
+            app:argType="integer" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_daireFragment_to_daireDetayFragment"
+            app:destination="@id/daireDetayFragment" />
+        <argument
+            android:name="siteAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/daireDetayFragment"
+        android:name="com.kira.takip.DaireDetayFragment"
+        android:label="fragment_daire_detay"
+        tools:layout="@layout/fragment_daire_detay" >
+        <argument
+            android:name="secilenDaire"
+            app:argType="string" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <argument
+            android:name="siteAdi"
+            app:argType="string" />
+        <argument
+            android:name="blokHarfi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/kiraGelirleriFragment"
+        android:name="com.kira.takip.KiraGelirleriFragment"
+        android:label="fragment_kira_gelirleri"
+        tools:layout="@layout/fragment_kira_gelirleri" >
+        <action
+            android:id="@+id/action_kiraGelirleriFragment_to_aylarFragment"
+            app:destination="@id/aylarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bloklarFragment"
+        android:name="com.kira.takip.BloklarFragment"
+        android:label="fragment_bloklar"
+        tools:layout="@layout/fragment_bloklar" >
+        <argument
+            android:name="siteAdi"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_bloklarFragment_to_kiraciDetayFragment"
+            app:destination="@id/kiraciDetayFragment" />
+        <argument
+            android:name="ayAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/kiraciDetayFragment"
+        android:name="com.kira.takip.KiraciDetayFragment"
+        android:label="fragment_kiraci_detay"
+        tools:layout="@layout/fragment_kiraci_detay" >
+        <argument
+            android:name="daireDetay"
+            app:argType="com.kira.takip.DetayliDaire" />
+    </fragment>
+    <fragment
+        android:id="@+id/aylarFragment"
+        android:name="com.kira.takip.AylarFragment"
+        android:label="fragment_aylar"
+        tools:layout="@layout/fragment_aylar" >
+        <action
+            android:id="@+id/action_aylarFragment_to_bloklarFragment"
+            app:destination="@id/bloklarFragment" />
+        <argument
+            android:name="siteAdi"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/duzenliHarcamalarFragment"
+        android:name="com.kira.takip.DuzenliHarcamalarFragment"
+        android:label="fragment_duzenli_harcamalar"
+        tools:layout="@layout/fragment_duzenli_harcamalar" >
+        <argument
+            android:name="ay"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aySecinizFragment"
+        android:name="com.kira.takip.AySecinizFragment"
+        android:label="fragment_ay_seciniz"
+        tools:layout="@layout/fragment_ay_seciniz" >
+        <action
+            android:id="@+id/action_aySecinizFragment_to_duzenliHarcamalarFragment"
+            app:destination="@id/duzenliHarcamalarFragment" />
+        <argument
+            android:name="from"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_aySecinizFragment_to_aylikHarcamalar2"
+            app:destination="@id/aylikHarcamalar2" />
+        <action
+            android:id="@+id/action_aySecinizFragment_to_duzenliHarcamalarFragment2"
+            app:destination="@id/duzenliHarcamalarFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/aylikHarcamalar2"
+        android:name="com.kira.takip.AylikHarcamalar"
+        android:label="fragment_aylik_harcamalar"
+        tools:layout="@layout/fragment_aylik_harcamalar" >
+        <argument
+            android:name="ay"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/toplamBilancoFragment"
+        android:name="com.kira.takip.ToplamBilancoFragment"
+        android:label="fragment_toplam_bilanco"
+        tools:layout="@layout/fragment_toplam_bilanco" >
+        <argument android:name="secilenAy" />
+    </fragment>
+    <fragment
+        android:id="@+id/aylarFragment2"
+        android:name="com.kira.takip.AylarFragment2"
+        android:label="fragment_aylar2"
+        tools:layout="@layout/fragment_aylar2" >
+        <action
+            android:id="@+id/action_aylarFragment2_to_toplamBilancoFragment"
+            app:destination="@id/toplamBilancoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/duzenliHarcamalarFragment2"
+        android:name="com.kira.takip.DuzenliHarcamalarFragment2"
+        android:label="fragment_duzenli_harcamalar2"
+        tools:layout="@layout/fragment_duzenli_harcamalar2" >
+        <argument
+            android:name="ay"
+            app:argType="string" />
+    </fragment>
+</navigation>

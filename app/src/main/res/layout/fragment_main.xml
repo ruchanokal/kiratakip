@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/toplamBilanco"
+            android:text="Toplam Bilanço"
+            android:backgroundTint="@color/softgreen"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/manrope_medium"
+            android:ems="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/kiraGeliri"
+            android:text="Kira Gelirleri"
+            android:backgroundTint="@color/softgreen"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/manrope_medium"
+            android:ems="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/duzenliHarcamalar"
+            android:text="Düzenli Harcamalar"
+            android:backgroundTint="@color/softgreen"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/manrope_medium"
+            android:ems="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/aylikHarcamalar"
+            android:text="Aylık Harcamalar"
+            android:backgroundTint="@color/softgreen"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/manrope_medium"
+            android:ems="11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSiteEkle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        app:backgroundTint="#B1B1B1"
+        app:tint="@color/black"
+        android:src="@drawable/plus"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

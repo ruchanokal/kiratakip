@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editTextNameText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/emailpasswordborder"
+        android:hint="Gider çeşidi giriniz"
+        android:fontFamily="@font/manrope_medium"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="#B7B6B6"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextUcret"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/emailpasswordborder"
+        android:hint="Gider miktarını giriniz"
+        android:fontFamily="@font/manrope_medium"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="#B7B6B6"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/softgreen"
+        android:textColor="@color/blue"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingVertical="0dp"
+        android:paddingHorizontal="10dp"
+        android:text="-"
+        android:layout_marginEnd="3dp"
+        android:textSize="25sp"/>
+
+</LinearLayout>

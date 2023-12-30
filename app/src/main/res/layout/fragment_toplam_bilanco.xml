@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToplamBilancoFragment">
+
+    <TextView
+        android:id="@+id/toplamBilancoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        android:text="Toplam Bilanço"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/aylikText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_medium"
+        android:textColor="@color/red"
+        android:textSize="19sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Beklenen Top. Gelir: " />
+
+        <TextView
+            android:id="@+id/toplamGelir"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            tools:text="2000₺ " />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Alınmayan Gelir: " />
+
+        <TextView
+            android:id="@+id/alinmayanGelir"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            tools:text="2000₺ " />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Alınan Gelir: " />
+
+        <TextView
+            android:id="@+id/alinanGelir"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            tools:text="2000₺ " />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Gider(Düzenli): " />
+
+        <TextView
+            android:id="@+id/giderDuzenli"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            tools:text="2000₺ " />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Gider(Düzensiz): " />
+
+        <TextView
+            android:id="@+id/giderDuzensiz"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            tools:text="2000₺ " />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="Toplam Bilanço: " />
+
+        <TextView
+            android:id="@+id/netToplamBilanco"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            tools:text="2000₺ " />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
